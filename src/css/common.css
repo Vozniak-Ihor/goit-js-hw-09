@@ -76,6 +76,7 @@ body {
 
 /* Стилі для кнопок Start та Stop */
 button[data-start],
+button[data-stop],
 button[data-restart] {
   margin-left: 180px;
   padding: 10px 20px;
@@ -88,17 +89,15 @@ button[data-restart] {
 }
 
 button[data-start]:hover,
+button[data-stop]:hover,
 button[data-restart]:hover {
   background-color: #3e8e41;
 }
 
 button[data-start]:active,
+button[data-stop]:active,
 button[data-restart]:active {
   background-color: #1f1f1f;
-}
-
-.is-active{
-  background-color: #4CAF50;
 }
 
 /* Стилі для datetime-picker */
