@@ -16,3 +16,106 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.container{
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+#datetime-picker {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  font-size: 16px;
+  margin-right: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Загальні стилі */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+}
+
+/* Стилі для інтерфейсу таймера */
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.value {
+  font-size: 3em;
+  font-weight: bold;
+  color: #333;
+}
+
+.label {
+  font-size: 1.2em;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Стилі для кнопок Start та Stop */
+button[data-start],
+button[data-restart] {
+  margin-left: 180px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+button[data-start]:hover,
+button[data-restart]:hover {
+  background-color: #3e8e41;
+}
+
+button[data-start]:active,
+button[data-restart]:active {
+  background-color: #1f1f1f;
+}
+
+.is-active{
+  background-color: #4CAF50;
+}
+
+/* Стилі для datetime-picker */
+#datetime-picker {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-size: 1.2em;
+  color: #333;
+  background-color: #fff;
+  text-align: center;
+}
+
+#datetime-picker:focus {
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
