@@ -12,10 +12,10 @@ async function handleFormElSubmit(event) {
     let currentDelay = inputDelayValue + (i - 1) * inputStepValue;
     createPromise(i, currentDelay)
       .then(({ position, delay }) => {
-        window.alert(`✅ Fulfilled promise ${position} in ${delay}ms`);
+        console.log(`✅ Fulfilled promise ${position} in ${delay}ms`);
       })
       .catch(({ position, delay }) => {
-        window.alert(`❌ Rejected promise ${position} in ${delay}ms`);
+        console.log(`❌ Rejected promise ${position} in ${delay}ms`);
       });
   }
 }
